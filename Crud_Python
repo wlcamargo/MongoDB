@@ -1,0 +1,15 @@
+from pymongo import MongoClient
+client = MongoClient("localhost", 27017)
+
+#print(client.list_database_names())
+
+#Criando DataBase
+db = client.Linkedin
+
+#Criando Coleção e Inserindo Documentos
+db.nomes.insert_many(
+    [
+        {"nome":"Wallace", "profissao": "Consultor de BI"},
+        {"nome":"Ronaldinho", "profissao": "Jogador de Futebol"}
+    ]
+)
