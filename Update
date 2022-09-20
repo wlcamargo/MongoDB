@@ -1,0 +1,8 @@
+Atualizar valor no campo 
+db.collection.updateMany({"valor" : 2}, {$set: {"valor": 999}})
+
+db.collection.updateOne({"valor" : 2}, {$set: {"valor": 999}})
+
+Update com Replace
+db.collection.replaceOne({valor:999}, {alterado: "documento"})
+
