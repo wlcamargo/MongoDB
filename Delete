@@ -6,3 +6,7 @@ db.collection.deleteMany({valor:999})
 
 Apagar valores que contém
 db.collection.deleteMany({valor: {$exists: true}})
+
+
+Apagar tudo
+db.collection.deleteMany({})
