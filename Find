@@ -1,0 +1,13 @@
+buscar a collection inteira
+db.collection.find()
+   
+buscar por chave e valor  
+db.collection.find({"chave":valor})
+
+buscando chave que exista na collection, independente do valor
+db.collection.find({"chave":{$exists : true}})
+
+find com Projection - Trazer somente os campos que desejo da collection
+db.collection.find({}, {campo_a: 1, campo_2: 1})
+
+
