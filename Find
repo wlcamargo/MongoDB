@@ -8,6 +8,7 @@ buscando chave que exista na collection, independente do valor
 db.collection.find({"chave":{$exists : true}})
 
 find com Projection - Trazer somente os campos que desejo da collection
+(1 ou true para os campos)
 db.collection.find({}, {campo_a: 1, campo_2: 1})
 
 
