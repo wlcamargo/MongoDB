@@ -1,0 +1,8 @@
+Deletar o primeiro documento encontrado
+db.collection.deleteOne({valor:999})
+
+Deletar o primeiro documento encontrado
+db.collection.deleteMany({valor:999})
+
+Apagar valores que contém
+db.collection.deleteMany({valor: {$exists: true}})
