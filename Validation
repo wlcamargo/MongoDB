@@ -1,0 +1,27 @@
+{
+  $jsonSchema: {
+    bsonType: 'object',
+    required: [
+      'name',
+      'cargo',
+      'setor',
+      'sexo'
+    ],
+    properties: {
+      name: {
+        bsonType: 'string'
+      },
+      cargo: {
+        bsonType: 'string'
+      },
+      setor: {
+        bsonType: 'string'
+      },
+      sexo: {
+        bsonType: 'string',
+        maxLength: 1,
+        description: 'somente uma letra é aceita'
+      }
+    }
+  }
+}
