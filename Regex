@@ -1,0 +1,11 @@
+#Case sensitive
+
+#contém
+db.collection.find({chave: /valor/})
+
+#Começa com
+db.collection.find({chave: /^valor/})
+
+
+#Termina com
+db.collection.find({chave: /valor$/})
