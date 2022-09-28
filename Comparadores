@@ -1,0 +1,11 @@
+# GTE (Maior ou Iguail)
+db.collection.find({ chave: {$gte: 100}}, {chave: 1, chave:1, _id: 0})
+
+#GT (Maior)
+db.collection.find({ chave: {$gt: 100}}, {chave: 1, chave:1, _id: 0})
+
+#LTE (Menor ou Igual)
+db.collection.find({ chave: {$lte: 100}}, {chave: 1, chave:1, _id: 0})
+
+#LT (Menor)
+db.collection.find({ chave: {$lt: 100}}, {chave: 1, chave:1, _id: 0})
