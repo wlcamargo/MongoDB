@@ -9,3 +9,7 @@ db.collection.find({chave: /^valor/})
 
 #Termina com
 db.collection.find({chave: /valor$/})
+
+
+#Ignorar Case sensitive
+db.collection.find({chave: /valor$/i})
