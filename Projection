@@ -1,0 +1,2 @@
+#buscar somente os campos que desejo na consulta
+db.collection.find({ chave: valor}, {chave: true, chave2 : 1, _id: 0})
