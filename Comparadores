@@ -9,3 +9,6 @@ db.collection.find({ chave: {$lte: 100}}, {chave: 1, chave:1, _id: 0})
 
 #LT (Menor)
 db.collection.find({ chave: {$lt: 100}}, {chave: 1, chave:1, _id: 0})
+
+#NE (Diferente)
+db.collection.find({ chave: {$ne: 100}}, {chave: 1, chave:1, _id: 0})
