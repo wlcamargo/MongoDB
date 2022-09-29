@@ -1,0 +1,2 @@
+#Buscar uma faixa
+db.collection.find({chave: { $gte : valor , $lte : valor},},{_id: 0, name:1, defense: 1})
